@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: main 
 publish_mode: editorial_workflow
 media_folder: "public/assets/blog"
 public_folder: "/assets/blog"
@@ -10,12 +10,12 @@ collections:
     folder: "src/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    collections:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "string"}
-      - {label: "Author", name: "author", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Tags", name: "tags", widget: "list", default: ["post"]}
-      - {label: "Featured Image", name: "image", widget: "image"}
-      - {label: "Image Caption", name: "imageAlt", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Image Caption", name: "imageAlt", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
